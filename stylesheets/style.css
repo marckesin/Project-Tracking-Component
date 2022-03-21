@@ -27,7 +27,6 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
 }
 
 input,
@@ -58,6 +57,25 @@ h6 {
 }
 .attribution a {
   color: #3e52a3;
+}
+
+.container-main {
+  padding-left: 10rem;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@media (max-width: 991px) {
+  img {
+    max-width: 140%;
+  }
+
+  .container-main {
+    padding-left: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
