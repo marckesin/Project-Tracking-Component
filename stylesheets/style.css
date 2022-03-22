@@ -69,7 +69,8 @@ h6 {
   padding: 0.75rem 2rem;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1rem;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 1px;
   transition: all 0.2s ease-in;
 }
 .btn-preview:hover {
@@ -134,7 +135,7 @@ h6 {
   right: 0;
   background-color: #eef3f6;
   width: 48%;
-  height: 50%;
+  height: 53%;
   z-index: -1;
   border-bottom-left-radius: 3.5rem;
 }
