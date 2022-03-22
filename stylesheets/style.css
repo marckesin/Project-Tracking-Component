@@ -36,6 +36,7 @@ select {
   font: inherit;
 }
 
+a,
 p,
 h1,
 h2,
@@ -101,6 +102,20 @@ h6 {
   height: 28.8rem;
 }
 
+.navbar {
+  padding-right: 8rem;
+}
+.navbar li:last-child a {
+  color: #a0a1ac !important;
+}
+.navbar .nav-link {
+  color: #242942 !important;
+  font-weight: 700;
+}
+.navbar .navbar-nav {
+  gap: 2.2rem;
+}
+
 .pattern {
   content: "";
   position: absolute;
@@ -124,12 +139,35 @@ h6 {
 }
 
 @media (max-width: 600px) {
-  img {
-    max-width: 140%;
+  body {
+    height: auto;
+  }
+
+  main {
+    margin-top: 7rem;
+  }
+
+  .attribution {
+    text-align: left;
+  }
+
+  .btn-preview {
+    font-size: 0.85rem;
+    padding: 0.75rem 1.5rem;
   }
 
   .container-main {
     padding-left: 2rem;
+  }
+
+  .description {
+    padding-right: 3rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .heading {
+    padding-right: 1rem;
+    font-size: 2.5rem;
   }
 
   .illustration {
@@ -139,11 +177,32 @@ h6 {
   }
 
   .navbar {
-    margin-bottom: 4rem;
+    padding-right: 3.5rem;
+    position: absolute;
+  }
+  .navbar .navbar-nav {
+    gap: 0.75rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.35rem;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+  }
+  .navbar .navbar-toggler {
+    border-color: transparent;
+    padding: 0;
+  }
+  .navbar .navbar-toggler:focus {
+    box-shadow: none;
   }
 
   .pattern {
-    height: 77%;
+    height: 52%;
+  }
+
+  .preview {
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
   }
 }
 
