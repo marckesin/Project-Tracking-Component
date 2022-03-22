@@ -122,6 +122,10 @@ $light-grayish-blue: hsl(207, 33%, 95%);
     height: auto;
   }
 
+  li:nth-last-child(2) {
+    width: 100%;
+  }
+
   main {
     margin-top: 9rem;
   }
