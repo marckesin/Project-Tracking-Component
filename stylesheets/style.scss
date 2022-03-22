@@ -4,7 +4,7 @@ $red: hsl(0, 100%, 68%);
 $red-hover: hsla(0, 100%, 68%, 0.75);
 $very-dark-blue: hsl(230, 29%, 20%);
 $dark-grayish-blue: hsl(230, 11%, 40%);
-$grayish-blue: hsl(231, 7%, 65%);
+$grayish-blue: hsl(235, 7%, 65%);
 $light-grayish-blue: hsl(207, 33%, 95%);
 
 .attribution {
@@ -58,6 +58,23 @@ $light-grayish-blue: hsl(207, 33%, 95%);
   height: 28.8rem;
 }
 
+.navbar {
+  padding-right: 8rem;
+
+  li:last-child a {
+    color: $grayish-blue !important;
+  }
+
+  .nav-link {
+    color: $very-dark-blue !important;
+    font-weight: 700;
+  }
+
+  .navbar-nav {
+    gap: 2.2rem;
+  }
+}
+
 .pattern {
   content: "";
   position: absolute;
@@ -82,12 +99,35 @@ $light-grayish-blue: hsl(207, 33%, 95%);
 }
 
 @media (max-width: 600px) {
-  img {
-    max-width: 140%;
+  body {
+    height: auto;
+  }
+
+  main {
+    margin-top: 7rem;
+  }
+
+  .attribution {
+    text-align: left;
+  }
+
+  .btn-preview {
+    font-size: 0.85rem;
+    padding: 0.75rem 1.5rem;
   }
 
   .container-main {
     padding-left: 2rem;
+  }
+
+  .description {
+    padding-right: 3rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .heading {
+    padding-right: 1rem;
+    font-size: 2.5rem;
   }
 
   .illustration {
@@ -97,10 +137,35 @@ $light-grayish-blue: hsl(207, 33%, 95%);
   }
 
   .navbar {
-    margin-bottom: 4rem;
+    padding-right: 3.5rem;
+    position: absolute;
+
+    .navbar-nav {
+      gap: 0.75rem;
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 0.35rem;
+      background-color: hsl(0, 0%, 100%);
+      box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+    }
+
+    .navbar-toggler {
+      border-color: transparent;
+      padding: 0;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
   }
 
   .pattern {
-    height: 77%;
+    height: 52%;
+  }
+
+  .preview {
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
   }
 }
