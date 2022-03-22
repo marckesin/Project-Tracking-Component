@@ -56,6 +56,7 @@ h6 {
 .attribution {
   font-size: 11px;
   text-align: center;
+  visibility: hidden;
 }
 .attribution a {
   color: #3e52a3;
