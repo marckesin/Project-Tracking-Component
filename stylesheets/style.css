@@ -56,7 +56,6 @@ h6 {
 .attribution {
   font-size: 11px;
   text-align: center;
-  visibility: hidden;
 }
 .attribution a {
   color: #3e52a3;
@@ -205,8 +204,10 @@ h6 {
   }
 
   .navbar {
-    padding: 2rem 3.5rem 0 0;
+    padding: 2rem 1.5rem 0 2rem;
     position: absolute;
+    top: 0;
+    left: 0;
   }
   .navbar .navbar-nav {
     gap: 0.75rem;
