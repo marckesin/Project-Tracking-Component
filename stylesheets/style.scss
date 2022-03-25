@@ -10,7 +10,6 @@ $light-grayish-blue: hsl(207, 33%, 95%);
 .attribution {
   font-size: 11px;
   text-align: center;
-  visibility: hidden;
 
   a {
     color: hsl(228, 45%, 44%);
@@ -167,8 +166,10 @@ $light-grayish-blue: hsl(207, 33%, 95%);
   }
 
   .navbar {
-    padding: 2rem 3.5rem 0 0;
+    padding: 2rem 1.5rem 0 2rem;
     position: absolute;
+    top: 0;
+    left: 0;
 
     .navbar-nav {
       gap: 0.75rem;
